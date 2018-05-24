@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>ADD</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="add.css" type="text/css" />
+    </head>
+    <body>
+        <div id="first">
+            <form action="index.php" id="2"></form>
+      <form enctype="multipart/form-data" action="add.php" method="post" id="1">
+          <div class="add"><p>Wpisz Tytuł</p>
+              <input id="title" type="text" maxlength="40" name="title"/>
+          </div>
+          <div class="add"><p>Wyslij plik ".jpg" lub ".png". Maksymalny rozmiar 2MB:</p>
+             <input type="hidden" name="max_size" value="2048000"/> 
+                  <input type="file" name="obrazek"/> 
+          </div>
+       
+          <div class="add"><p>Dodaj Artykuł:</p>
+              <textarea name="text">Wpisz dowolny text</textarea>
+          </div>
+          <input type="hidden" name="token" value="bdhsadf238rhf83f32fr3y8df1hr3rf3gfr23c4y8tyq3x">
+          <p align="center">
+          <input form="2" type="submit" value="Strona główna"/>
+          <input form="1" type="submit" value="Zatwierdz"/>
+          </p>
+      </form>
+        </div>
+    </body>
+</html>

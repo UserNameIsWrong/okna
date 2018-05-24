@@ -1,0 +1,54 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017-04-17, 22:02:34
+    Author     : Kortez
+*/
+body{background-image: url("index_tlo1.jpg"); background-size: cover; background-attachment: fixed}
+
+div {width: 46%; height: 29vh; overflow: hidden;
+    margin: 0.7vh; overflow: hidden; display: inline-block; border-style: solid; border-color: black; border-width: 0.2vh;
+    box-shadow: 2px 2px 2px black; background-color: rgba(120, 120, 120, 0.65);}
+div:hover{background-color:  lightblue;}
+div.wybrany {animation-name: wybrany; animation-duration: 0.5s; overflow: scroll;
+             position: fixed; width: 96%; height: 96vh; left: 2%; top: 0.7vh; background-color: white; z-index: 1}
+
+#wpis_img {position: relative; width: 35%; height: auto; margin-bottom: 2%}
+#wpis_img:hover{width:75%; border-style: solid; border-color: lightblue}
+
+p{margin: 2%}
+p.tite {margin: 0.3vh; text-align: center; font-weight: bold; font-size: 1.3em; background-color:  lightblue; left: 0 }
+
+#close{
+    position:fixed; width: auto; height: auto; visibility: hidden; top: 2.6vh; right: 5%; 
+    text-decoration: none; color: black; font-weight: bold; font-style: oblique; text-shadow: 2px 2px 2px blue;  
+}
+#close.close{visibility: visible; z-index: 2;}
+#close:hover{color: blue}
+#close:focus{color: blue; text-shadow: none}
+#data{text-align: right; color: #474747; margin-top: 5%; font-style: oblique; font-size: 0.9em}
+#add{position: relative; width: 34%; height: 64%; top: 18%; left: 33%}
+a{position: relative; width: 100%; height: 100%}
+form{position: relative; width: 95%; color: black; display: block; overflow: hidden;
+     margin: 0.9vh; padding-top: 2.1vh; padding-bottom: 2.1vh; padding-left: 1vh; background-color: transparent;
+visibility: hidden;}
+form:hover{animation-name: remove; animation-duration: 1.7s; font-size: 1em; background-color:  rgba(153, 204, 255, 1);  visibility: visible}
+button{position: relative; color: red}
+span{ font-size: 0.8em; visibility: visible; color: black;}
+
+@keyframes wybrany
+{
+    0%{width: 46%; height: 29vh; background-color: rgba(255, 255, 255, 0.1)}
+    40%{left: 26%; top: 33%; width: 46%; height: 29vh; background-color: rgba(255, 255, 255, 0.1)}
+    100%{width: 96%; height: 96vh; background-color: rgba(255, 255, 255, 1) }
+}
+
+@keyframes remove
+{
+    0%{width: 95%; background-color: rgba(153, 204, 255, 0.2); color: transparent;}
+    60%{color: transparent}
+    100%{width: 95%; background-color: rgba(153, 204, 255, 1); color: black}
+}

@@ -1,0 +1,28 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017-09-08, 13:27:43
+    Author     : Kortez
+*/
+div.clear{position: relative; width: auto; height: inherit; overflow: hidden;
+    margin: 0; display: inline-block; border-style: none;  border-width: 0;
+    box-shadow: none; background-color: transparent;}
+.clear#text{position: center; width: 88%;  margin-top: 0.6vh; margin-bottom: 0.6vh;
+    font-weight: bold; font-size: 1.2em}
+#header{position: static; width: 98%; height: auto; margin: 0.7vh; padding: 0; overflow: hidden;
+                          font-size: 1.2em; font-weight: bold; text-align: center; 
+                         border-style: solid; border-color: black; border-width: 0.2vh;
+                         box-shadow: 2px 2px 2px black; display: inline-block}
+#reg{display: none;}
+#usname{font-size: 1.2em}
+.clear#user{display: inline; right: 2%; position: absolute; width: auto; height: 5vh; border: hidden; border-width: 0;
+    box-shadow: none; overflow-y: hidden; overflow-x: visible; z-index: 99 }
+
+.clear#user:hover {position: fixed; overflow: visible; height: auto; background-color: rgba(120, 120, 120, 0.65);
+    box-shadow: 2px 2px 2px black}
+#ico{height: 4.5vh; width: 4.5vh; margin: 0.3vh}
+li{list-style-type: none; padding: 0.6vh;  }
+ul{display: inline; }

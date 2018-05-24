@@ -1,0 +1,23 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017-04-13, 22:57:55
+    Author     : Kortez
+*/
+body{background-image: url("index_tlo1.jpg"); background-size: cover; background-attachment: fixed}
+textArea{width: 90%; height: 300px}
+#first{box-shadow: none; border: 1px; border-style: solid; margin: 1px; background-color: rgba(255, 255, 255, 0.65)}
+#title{font-variant: all-petite-caps;font-size: 1.07em; margin-bottom: 5px; width: 25ch; background-color: windowframe; border-style: none }
+#title:focus{background-color: white}
+textArea{background-color: windowframe; border-style: none}
+textArea:focus{background-color: white}
+div.add{
+    margin: 0.8vh; padding: 0.8vh;
+    border: 1px; border-style: solid; box-shadow: 2px 2px 2px black;
+    background-color: windowframe; opacity: 0.95
+}
+p{font-size: 1.3em; font-weight: bold;}
+.add:hover{background-color: lightblue; opacity: 1}

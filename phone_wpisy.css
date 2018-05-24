@@ -1,0 +1,53 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017-04-26, 21:03:50
+    Author     : Kortez
+*/
+
+body{background-image: url("index_tlo1.jpg");  background-size: cover; background-attachment: fixed}
+
+div{width: 96%; height: 48vh;
+    margin: 0.7vh; overflow: hidden; display: block;
+    background-color: rgba(120, 120, 120, 0.65)}
+div.wybrany{animation-name: wybrany; animation-duration: 0.5s; overflow: scroll;
+    position: fixed; left: 0%; top: 1px;  width: 98%; height: 98vh; margin: 0.5vh; z-index: 1; background-color: white; overflow: scroll;}
+
+img{position: relative; width: 35%; height: auto; margin-bottom: 2%}
+img:hover{width:85%; border-style: solid; border-color: lightblue}
+
+p{margin: 2%}
+p.tite{margin: 0.3vh; text-align: center; font-weight: bold; font-size: 1.3em; background-color:  lightblue; left: 0 }
+
+#close{
+    border-style: solid; border-color: black; border-width: 0.2vh;
+    position:fixed; width: auto; height: auto; visibility: hidden; top: 2.6vh; right: 5%; 
+    text-decoration: none; color: black; font-weight: bold; font-style: oblique; text-shadow: 2px 2px 2px blue;  
+}
+#close.close{visibility: visible; z-index: 2;}
+#close:focus{color: blue; text-shadow: none}
+#data{text-align: right; color: #474747; margin-top: 5%; font-style: oblique; font-size: 0.9em}
+#add{position: relative; width: 50%; height: 50%; top: 25%; left: 25%}
+a{position: relative; width: 100%; height: 100%}
+form{position: relative; width: 95%; color: black; display: block; overflow: hidden;
+     margin: 0.9vh; padding-top: 2.1vh; padding-bottom: 2.1vh; padding-left: 1vh; background-color: transparent;
+visibility: hidden;}
+form:hover{animation-name: remove; animation-duration: 1.7s; font-size: 1.2em; background-color:  rgba(153, 204, 255, 1);  visibility: visible}
+button{position: relative; color: red}
+span{ font-size: 0.8em; visibility: visible; color: black;}
+
+@keyframes wybrany
+{
+    0%{width: 96%; height: 48vh; background-color: rgba(255, 255, 255, 0.1)}
+    40%{top: 30%; height: 39vh; background-color: rgba(255, 255, 255, 0.1)}
+    100%{width: 96%; height: 96vh; background-color: rgba(255, 255, 255, 1) }
+}
+@keyframes remove
+{
+    0%{width: 95%; background-color: rgba(153, 204, 255, 0.2); color: transparent;}
+    60%{color: transparent}
+    100%{width: 95%; background-color: rgba(153, 204, 255, 1); color: black}
+}
